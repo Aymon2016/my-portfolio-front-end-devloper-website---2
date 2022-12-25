@@ -1,0 +1,43 @@
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 15px;
+}
+.logoName{
+    
+    
+    margin-left: 5px;
+}
+.logoName:hover{
+    color:RGB(250, 207, 15);
+}
+.navbar{
+    background-color:RGBA(0, 0, 0, 0);
+}
+.navbar .nav-link{
+    
+    
+    color: #333333;
+
+    font-family:"Source Sans Pro", sans-serif;  
+    font-size:15.104px;
+    line-height:22.656px;
+    vertical-align:baseline;
+    letter-spacing:1px;
+    word-spacing:0px;
+    margin:0px;
+    padding:20.768px 28.32px;
+
+    font-weight:700;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:uppercase;
+    text-decoration:none solid rgb(250, 207, 15);
+    text-align:left;
+    text-indent:0px;
+}
+.navbar .nav-link:hover{
+    color:RGB(250, 207, 15);
+}

@@ -1,0 +1,201 @@
+.contact .info {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .contact .info span i {
+    font-size: 20px;
+    color: #0563bb;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #eef7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #45505b;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #728394;
+  }
+  
+  .contact .info .email,
+  .contact .info .phone {
+    margin-top: 40px;
+  }
+  
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i {
+    background: #0563bb;
+    color: #fff;
+  }
+  
+  .contact .phpEmailForm {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .contact .phpEmailForm .formGroup {
+    padding-bottom: 8px;
+  }
+  
+  .contact .phpEmailForm .errorMessage {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .phpEmailForm .errorMessage br+br {
+    margin-top: 25px;
+  }
+  
+  .contact .phpEmailForm .sentMessage {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .phpEmailForm .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .phpEmailForm .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .phpEmailForm input,
+  .contact .php-email-form textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact .phpEmailForm input {
+    height: 44px;
+  }
+  
+  .contact .phpEmailForm textarea {
+    padding: 10px 12px;
+  }
+  
+ 
+  
+  
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* button css */
+
+.sentMassage{
+    margin-top: 20px;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: rgb(15, 15, 15);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: rgb(65, 62, 62)43, 41, 41
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 221, 5);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+  
