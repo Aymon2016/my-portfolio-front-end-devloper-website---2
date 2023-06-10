@@ -1,29 +1,19 @@
 
 import './App.css';
-// BOOTSTRAP CSS FILE
-
-
-
-import Header from './component/header/header';
-import HeroSection from './component/heroHeader/heroSection';
-import About from './component/about/about'
-import MainProject from './component/project/mainproject';
-import Contact from './component/contact/contact';
-import Footer from './component/footer/footer';
-
-
+import Homepage from '../src/pages/homepage';
+import Aboutpage from '../src/pages/aboutpage';
+import Projectpage from '../src/pages/projectpage'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-      <>
-        <Header />
-        <HeroSection />
-        
-        <About />
-        <MainProject />
-        <Contact />
-        <Footer />
-      </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/project" element={<Projectpage />} />
+      </Routes>
+    </Router>
   );
 }
 
